@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+	<head>
+
+    	<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>AngularJs Practise</title>
+		<meta name="keywords" content="angularJs Practise" />
+		<meta name="description" content="angularJs Practise">
+		<meta name="author" content="angularJs Practise">
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<script src="assets/js/angular.min.js"></script>
+		<script src="assets/js/angular-ui/angular-ui-router.min.js"></script>
+	    <script src="assets/js/jquery.min.js"></script>
+    	<script src="assets/js/bootstrap.min.js"></script>
+
+    	<script src="scripts/app.js"></script>
+    	<script src="scripts/controllers/homeCtrl.js"></script>
+    	<script src="scripts/controllers/aboutCtrl.js"></script>
+    	<script src="scripts/services/friends.js"></script>
+ 		<style>
+ 			
+ 		</style>
+	</head>
+    <body>
+	    <div class="container" ng-app="myApp">
+	    	<header ng-include="'templates/nav.html'"></header>
+	    	<div ui-view></div>
+	    	<footer ng-include="'templates/footer.html'"></footer>
+	    </div>  
+	</body>
+</html>
