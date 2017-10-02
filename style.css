@@ -16,8 +16,9 @@ body{
 }
 
 img{
-  width: 10%;
+  width: 11%;
   border-radius: 100%;
+  border:3px solid white
 }
 .icon{
   text-align: right;
