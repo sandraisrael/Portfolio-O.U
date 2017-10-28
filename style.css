@@ -6,43 +6,42 @@ body{
   background-color: #011627;
   color: #ffffff;
 }
-
+body a{
+  color: #6290C3;
+  text-decoration: none;
+}
+a:hover{
+  color: #00009B;
+}
 .container{
   padding: 2rem;
 }
 
+/*header and intro*/
 .intro h1, h2 {
   font-size: 2rem;
 }
 .intro{
-
+  padding: 3rem;
+  margin-top: 2rem;
 }
-/*header and intro*/
-
-
-
-
 /*work*/
 .projects{
   display: flex;
 }
+.work h2{
+  line-height: 3;
+}
 .card{
   background-color: #4D7EA8;
-  border: 0.5px solid #000000;
   padding: 2em;
   border-radius: 5px;
 }
 
-.card:nth-child(odd) {
-  margin-right: 0.5em;
-  margin-bottom: 2em;
+.card p{
+  font-size: 0.8rem;
+  color: #C1C7D3;
 }
-
-.card:nth-child(even) {
-  margin-left: 0.5em;
-  margin-bottom: 2em;
-}
-
 
 /*footer*/
 .footer{
@@ -53,6 +52,10 @@ body{
 /*media queries*/
 @media screen and (max-width:750px) {
 
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .card{
      margin-top: 2em;
   }
@@ -63,8 +66,9 @@ body{
     padding: 0;
   }
   .intro{
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
+    padding: 1.2rem;
   }
   .intro h2, h1{
     font-size: 1.5rem;
@@ -75,6 +79,24 @@ body{
   .work h2{
     font-size: 1.2rem;
   }
+  .footer{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width:751px) {
+  .intro{
+    padding: 2rem;
+  }
+  .footer{
+    padding: 2rem;
+  }
+  .card:nth-child(odd) {
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+  }
 
-
+  .card:nth-child(even) {
+    margin-left: 0.5em;
+    margin-bottom: 2em;
+  }
 }
