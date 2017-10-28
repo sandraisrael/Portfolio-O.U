@@ -11,6 +11,12 @@ body{
   padding: 2rem;
 }
 
+.intro h1, h2 {
+  font-size: 2rem;
+}
+.intro{
+
+}
 /*header and intro*/
 
 
@@ -19,24 +25,24 @@ body{
 /*work*/
 .projects{
   display: flex;
-  flex-wrap: wrap;
 }
 .card{
   background-color: #4D7EA8;
   border: 0.5px solid #000000;
   padding: 2em;
   border-radius: 5px;
-
 }
+
 .card:nth-child(odd) {
   margin-right: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .card:nth-child(even) {
   margin-left: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
+
 
 /*footer*/
 .footer{
@@ -45,3 +51,30 @@ body{
 
 
 /*media queries*/
+@media screen and (max-width:750px) {
+
+  .card{
+     margin-top: 2em;
+  }
+  .card h3{
+    font-size: 1rem;
+  }
+  #work-container{
+    padding: 0;
+  }
+  .intro{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  .intro h2, h1{
+    font-size: 1.5rem;
+  }
+  .intro span{
+    font-size: 1.2rem;
+  }
+  .work h2{
+    font-size: 1.2rem;
+  }
+
+
+}
