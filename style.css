@@ -1,43 +1,32 @@
+html{
+  font-size: 16px;
+}
 body{
   font-family: 'Open Sans', sans-serif;
   background-color: #011627;
   color: #ffffff;
 }
 
-/*.container{
-  max-width: 100%;
-  margin: 2% 4%;
-}
-.jumbotron{
-  max-width: 100%;
-  display: flex;
-  margin-top: -6em;
-}
-.intro{
-  max-width: 80%;
-  font-weight: bold;
-}*/
-
-/*.icon img{
-  width: 20%;
-  border-radius: 100%;
-  border:3px solid white
-}
-.icon{
-  text-align: right;
-}*/
 .container{
-  padding: 3em;
+  padding: 2rem;
 }
+
+/*header and intro*/
+
+
+
+
+/*work*/
 .projects{
   display: flex;
+  flex-wrap: wrap;
 }
 .card{
   background-color: #4D7EA8;
   border: 0.5px solid #000000;
   padding: 2em;
   border-radius: 5px;
-  
+
 }
 .card:nth-child(odd) {
   margin-right: 0.5em;
@@ -49,6 +38,10 @@ body{
   margin-bottom: 1em;
 }
 
+/*footer*/
 .footer{
   text-align: right;
 }
+
+
+/*media queries*/
